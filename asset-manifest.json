@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/luxury-hotel/static/css/main.9ad598d3.css",
+    "main.js": "/luxury-hotel/static/js/main.d6246f7e.js",
+    "static/js/453.05e4485b.chunk.js": "/luxury-hotel/static/js/453.05e4485b.chunk.js",
+    "static/media/hero-image.png": "/luxury-hotel/static/media/hero-image.90949601ebd26e7f6deb.png",
+    "static/media/pt-serif-latin-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-latin-400-normal.1ae22975f707d0acdb70.woff2",
+    "static/media/pt-serif-cyrillic-ext-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-cyrillic-ext-400-normal.fd1b1ba0314b74f5f36c.woff2",
+    "static/media/pt-serif-cyrillic-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-cyrillic-400-normal.aba3393f6306deff1159.woff2",
+    "static/media/pt-serif-latin-ext-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-latin-ext-400-normal.5118ae473e17e1bdc175.woff2",
+    "static/media/pt-serif-latin-400-normal.woff": "/luxury-hotel/static/media/pt-serif-latin-400-normal.896640a651e95590d516.woff",
+    "static/media/pt-serif-cyrillic-ext-400-normal.woff": "/luxury-hotel/static/media/pt-serif-cyrillic-ext-400-normal.a8f425171975bb4d9b69.woff",
+    "static/media/pt-serif-cyrillic-400-normal.woff": "/luxury-hotel/static/media/pt-serif-cyrillic-400-normal.8b80a3bbe1a36d1dc2e2.woff",
+    "static/media/pt-serif-latin-ext-400-normal.woff": "/luxury-hotel/static/media/pt-serif-latin-ext-400-normal.c2b602eb7430171458cd.woff",
+    "static/media/poppins-latin-400-normal.woff": "/luxury-hotel/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/luxury-hotel/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
+    "index.html": "/luxury-hotel/index.html",
+    "main.9ad598d3.css.map": "/luxury-hotel/static/css/main.9ad598d3.css.map",
+    "main.d6246f7e.js.map": "/luxury-hotel/static/js/main.d6246f7e.js.map",
+    "453.05e4485b.chunk.js.map": "/luxury-hotel/static/js/453.05e4485b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ad598d3.css",
+    "static/js/main.d6246f7e.js"
+  ]
+}

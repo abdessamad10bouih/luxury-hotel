@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/luxury-hotel/static/css/main.9ad598d3.css",
-    "main.js": "/luxury-hotel/static/js/main.d6246f7e.js",
+    "main.css": "/luxury-hotel/static/css/main.3409a96a.css",
+    "main.js": "/luxury-hotel/static/js/main.da795471.js",
     "static/js/453.05e4485b.chunk.js": "/luxury-hotel/static/js/453.05e4485b.chunk.js",
-    "static/media/hero-image.png": "/luxury-hotel/static/media/hero-image.90949601ebd26e7f6deb.png",
+    "static/media/hero-image.png": "/luxury-hotel/static/media/hero-image.2a7f028bbe2c14395850.png",
+    "static/media/japan.png": "/luxury-hotel/static/media/japan.238bd031f7d02f9e02ac.png",
+    "static/media/australia.png": "/luxury-hotel/static/media/australia.ad030e825c7146c2577a.png",
+    "static/media/newzelanda.png": "/luxury-hotel/static/media/newzelanda.093dd48071ee05bdb32b.png",
+    "static/media/greece.png": "/luxury-hotel/static/media/greece.01e2990836b7d4b01cbb.png",
     "static/media/pt-serif-latin-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-latin-400-normal.1ae22975f707d0acdb70.woff2",
     "static/media/pt-serif-cyrillic-ext-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-cyrillic-ext-400-normal.fd1b1ba0314b74f5f36c.woff2",
     "static/media/pt-serif-cyrillic-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-cyrillic-400-normal.aba3393f6306deff1159.woff2",
@@ -17,12 +21,12 @@
     "static/media/poppins-latin-ext-400-normal.woff": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/luxury-hotel/index.html",
-    "main.9ad598d3.css.map": "/luxury-hotel/static/css/main.9ad598d3.css.map",
-    "main.d6246f7e.js.map": "/luxury-hotel/static/js/main.d6246f7e.js.map",
+    "main.3409a96a.css.map": "/luxury-hotel/static/css/main.3409a96a.css.map",
+    "main.da795471.js.map": "/luxury-hotel/static/js/main.da795471.js.map",
     "453.05e4485b.chunk.js.map": "/luxury-hotel/static/js/453.05e4485b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ad598d3.css",
-    "static/js/main.d6246f7e.js"
+    "static/css/main.3409a96a.css",
+    "static/js/main.da795471.js"
   ]
 }

@@ -5,20 +5,22 @@ import { motion } from "framer-motion";
 
 const navbar = () => {
   return (
-        <motion.nav 
-        variants={fadeIn("up", 0.2)}
-        initial="hidden" 
-        whileInView="visible" 
-        viewport={{ once: true }} 
-        className='w-[80%] h-[8vh] absolute left-[150px] top-0 flex justify-center'>
-            <div className='w-[210px] h-[18vh] bg-primary rounded-b-[50px] flex justify-center items-center'><img src={logo} alt="logo" /></div>
-            <ul className='w-[800px] relative top-[30px] left-[90px] flex items-center justify-evenly'>
-                <li><a href="" className='border-b-2 border-white-colortext-white-color text-white-color font-medium'>Home</a></li>
-                <li><a href="" className='text-white-color font-medium'>Facilities</a></li>
-                <li><a href="" className='text-white-color font-medium'>Rooms</a></li>
-                <li><a href="" className='text-white-color font-medium'>Contact-us</a></li>
+        <nav className='w-full h-20 flex justify-center items-center'>
+          <div className='w-11/12 h-full flex justify-center items-center'>
+            <div className="w-1/4 h-full flex justify-center items-center"><img src={logo} alt="" /></div>
+            <ul className='w-1/2 h-full flex justify-evenly items-center'>
+              <li><a href="" className='hover:text-primary transition-colors duration-150 ease-in-out'>Home</a></li>
+              <li><a href="" className='hover:text-primary transition-colors duration-150 ease-in-out'>Discover</a></li>
+              <li><a href="" className='hover:text-primary transition-colors duration-150 ease-in-out'>Rooms</a></li>
+              <li><a href="" className='hover:text-primary transition-colors duration-150 ease-in-out'>About</a></li>
+              <li><a href="" className='hover:text-primary transition-colors duration-150 ease-in-out'>Contact</a></li>
             </ul>
-        </motion.nav>
+            <div className="w-1/3 h-full flex justify-center items-center">
+           <a className='w-28 h-3/4 rounded-md text-primary grid place-content-center border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out' href="">Register</a>
+            <a className='w-28 h-3/4 rounded-md text-clr bg-primary grid place-content-center border-2 border-blue-500 ml-5 hover:bg-hover transition-colors duration-300 ease-in-out border-none' href="">Sign In</a>
+          </div>
+          </div>
+        </nav>
   )
 }
 

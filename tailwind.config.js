@@ -11,9 +11,10 @@ module.exports = {
         serif: ['PT Serif', 'serif'],
       },
       colors: {
-        'primary': '#E0B973',
-        'hover': '#E0B973',
-        'white-color': '#ffffff'
+        'primary': '#2F80ED',
+        'hover': '#163E73',
+        'clr': '#ffffff',
+        'txt-hover' : '#ffffff'
       }
     },
   },

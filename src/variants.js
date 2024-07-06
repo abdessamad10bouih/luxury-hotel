@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import ReactSlider from 'react-slider';
+
 export const fadeIn = (direction, delay) => {
     return {
         hidden: {

@@ -1,8 +1,9 @@
 import React from 'react';
-import Hero from './HomePage'; 
+import HomePage from './HomePage'; 
+import Covid from './components/covid';
 
 export default function App() {
   return (
-    <Hero />
+    <HomePage />
   );
 }

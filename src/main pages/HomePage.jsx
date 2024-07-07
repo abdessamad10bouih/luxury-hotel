@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './components/navBar';
+import NavBar from '../components/navBar';
 import heroImage from './assets/hero-image.png';
 import australia from './assets/australia.png';
 import japan from './assets/japan.png';
@@ -17,10 +17,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDays, faLocationDot, faUser, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import $ from 'jquery';
 import { motion } from "framer-motion";
-import { fadeIn, scaleBtn } from './variants';
-import Covid from './components/covid';
-import Button from './components/button';
-import Footer from './components/footer';
+import { fadeIn, scaleBtn } from '../variants';
+import Covid from '../components/covid';
+import Button from '../components/button';
+import Footer from '../components/footer';
 
 export default function HomePage() {
 

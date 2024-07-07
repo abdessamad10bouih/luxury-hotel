@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '../components/navBar';
-import heroImage from './assets/hero-image.png';
-import australia from './assets/australia.png';
-import japan from './assets/japan.png';
-import newZelanda from './assets/newzelanda.png';
-import greece from './assets/greece.png';
-import img1 from './assets/img1.png';
-import img2 from './assets/img2.png';
-import img3 from './assets/img3.png';
-import img4 from './assets/Rectangle 8.png';
-import img7 from './assets/Rectangle 9.png';
-import img5 from './assets/Rectangle 10.png'
-import img6 from './assets/Rectangle 11.png';
-import imgMobile from './assets/mobile.png'
+import heroImage from '../assets/hero-image.png';
+import australia from '../assets/australia.png';
+import japan from '../assets/japan.png';
+import newZelanda from '../assets/newzelanda.png';
+import greece from '../assets/greece.png';
+import img1 from '../assets/img1.png';
+import img2 from '../assets/img2.png';
+import img3 from '../assets/img3.png';
+import img4 from '../assets/Rectangle 8.png';
+import img7 from '../assets/Rectangle 9.png';
+import img5 from '../assets/Rectangle 10.png'
+import img6 from '../assets/Rectangle 11.png';
+import imgMobile from '../assets/mobile.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDays, faLocationDot, faUser, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import $ from 'jquery';

@@ -1,9 +1,17 @@
 import React from 'react';
-import HomePage from './main pages/HomePage'; 
-import Covid from './components/covid';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './main pages/HomePage';
+import LoginPage from './main pages/loginPage';
 
-export default function App() {
+function App() {
   return (
-    <HomePage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;

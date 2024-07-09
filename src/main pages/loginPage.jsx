@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/auth';
 import logo from '../assets/logo.png';
 import '../index.css';
 import $ from 'jquery';
@@ -7,10 +9,14 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import google from '../assets/google.png';
 import facebook from '../assets/facebook.png';
 import { Link } from 'react-router-dom';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import {auth} from '../firebase'
 
 export default function LoginPage() {
     const [isOpen, isClosed] = useState(faEye);
     const [textShow, textHide] = useState(false);
+
+    const { user } = useContext(AuthContext)
 
     const hatchingPass = () => {
         textHide(!textShow)
@@ -21,6 +27,16 @@ export default function LoginPage() {
             isClosed(faEye)
         }
     }
+    const navigate = useNavigate();
+    const handleSign = async () => {
+        const provider = new GoogleAuthProvider();
+        try {
+            await signInWithPopup(auth, provider);
+            navigate('/luxury-hotel');
+        } catch (error) {
+            console.error('Error signing in with Google:', error);
+        }
+    };
 
     return (
         <section className='w-full h-screen flex flex-col justify-center items-center'>
@@ -59,7 +75,7 @@ export default function LoginPage() {
                             <h1 className='text-sm bg-clr z-10 pl-2 pr-2'>Or use one of these options</h1>
                         </div>
                         <div className='w-full h-2/6 gap-3 flex flex-col items-center mt-4'>
-                            <a href="" className='w-full h-full gap-3 border-2 rounded-md bg-clr flex items-center justify-center'>
+                            <a c onClick={handleSign} className='w-full cursor-pointer h-full gap-3 border-2 rounded-md bg-clr flex items-center justify-center'>
                                 <img src={google} alt="google logo" />
                                 <h1>Sign in with google</h1>
                             </a>

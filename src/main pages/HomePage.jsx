@@ -20,7 +20,7 @@ import Button from '../components/button';
 import Footer from '../components/footer';
 import NavBar from '../components/navBar'
 
-function HomePage() {
+export default function HomePage() {
   useEffect(() => {
     $('#city').on('input', function () {
       const query = $(this).val();
@@ -191,5 +191,3 @@ function HomePage() {
     </>
   );
 }
-
-export default HomePage

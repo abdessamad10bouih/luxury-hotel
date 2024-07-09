@@ -18,7 +18,7 @@ const Navbar = () => {
           <li><Link to="/contact" className='hover:text-primary transition-colors duration-150 ease-in-out'>Contact</Link></li>
         </ul>
         <div className="w-1/3 h-full flex justify-center items-center">
-          <Link to="/login" className='w-28 h-3/4 rounded-md text-primary grid place-content-center border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out'>Register</Link>
+          <Link to="/register" className='w-28 h-3/4 rounded-md text-primary grid place-content-center border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out'>Register</Link>
           <Link to="/login" className='w-28 h-3/4 rounded-md text-clr bg-primary grid place-content-center border-2 border-blue-500 ml-5 hover:bg-hover transition-colors duration-300 ease-in-out border-none'>Sign In</Link>
         </div>
       </div>

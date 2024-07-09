@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/luxury-hotel/static/css/main.ea047e25.css",
-    "main.js": "/luxury-hotel/static/js/main.00c601ac.js",
+    "main.css": "/luxury-hotel/static/css/main.41dc235a.css",
+    "main.js": "/luxury-hotel/static/js/main.01800d2b.js",
     "static/js/453.05e4485b.chunk.js": "/luxury-hotel/static/js/453.05e4485b.chunk.js",
     "static/media/hero-image.png": "/luxury-hotel/static/media/hero-image.2a7f028bbe2c14395850.png",
     "static/media/mobile.png": "/luxury-hotel/static/media/mobile.b47a29e0e5c06899f84d.png",
@@ -29,12 +29,12 @@
     "static/media/poppins-latin-ext-400-normal.woff": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/luxury-hotel/index.html",
-    "main.ea047e25.css.map": "/luxury-hotel/static/css/main.ea047e25.css.map",
-    "main.00c601ac.js.map": "/luxury-hotel/static/js/main.00c601ac.js.map",
+    "main.41dc235a.css.map": "/luxury-hotel/static/css/main.41dc235a.css.map",
+    "main.01800d2b.js.map": "/luxury-hotel/static/js/main.01800d2b.js.map",
     "453.05e4485b.chunk.js.map": "/luxury-hotel/static/js/453.05e4485b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea047e25.css",
-    "static/js/main.00c601ac.js"
+    "static/css/main.41dc235a.css",
+    "static/js/main.01800d2b.js"
   ]
 }

@@ -98,7 +98,7 @@ export default function RegisterPage() {
                 <img src={logo} alt="" />
             </div>
             <form onSubmit={formAutoSubmit} className='w-full h-full flex flex-col items-center justify-center'>
-                <div className='w-2/6 h-full flex flex-col items-center'>
+                <motion.div layout className='w-2/6 h-full flex flex-col items-center'>
                     <AnimatePresence mode='wait'>
                         {nextStep === 'first page' && (
                             <motion.div
@@ -108,7 +108,7 @@ export default function RegisterPage() {
                                 exit="exit"
                                 variants={variants}
                                 transition={{ duration: 0.5 }}
-                                className='w-full flex flex-col items-center'
+                                className='w-full h-full flex flex-col items-center'
                             >
                                 <h1 className='text-3xl font-bold'>Register</h1>
                                 <div className='w-full h-20 mt-4 flex flex-col'>
@@ -134,7 +134,7 @@ export default function RegisterPage() {
                                     </a>
                                 </div>
                                 <div className='w-full h-6 mt-4 grid place-content-center'>
-                                    <h1>Don't have an account? <Link className='text-primary' to="/register">Register</Link></h1>
+                                    <h1>Already have an Account ?<Link className='text-primary' to="/login">Login</Link></h1>
                                 </div>
                             </motion.div>
                         )}
@@ -146,7 +146,7 @@ export default function RegisterPage() {
                                 exit="exit"
                                 variants={variants}
                                 transition={{ duration: 0.5 }}
-                                className='w-full flex flex-col items-center'
+                                className='w-full h-[90%] flex flex-col items-center'
                             >
                                 <h1 className='text-3xl font-bold'>Create Password</h1>
                                 <p className='font-thin text-sm mt-4 mb-4 text-center'>Use a minimum of 10 characters, including letters,<br /> lowercase letters, and numbers.</p>
@@ -160,7 +160,7 @@ export default function RegisterPage() {
                                     <input type={textShow ? 'text' : 'password'} value={confirmPassword} onChange={handleConfirmPasswordChange} name="ConfirmPassword" id="ConfirmPassword" className='w-full h-14 top-6 bg-inputs-color pl-3 rounded-md focus:outline-primary' />
                                     <FontAwesomeIcon onClick={textShowing} icon={eyeOpen} className='absolute text-2xl right-4 cursor-pointer top-10' />
                                 </div>
-                                <div className='w-full h-12 mt-4 flex justify-center items-center'>
+                                <div className='w-full h-20 mt-4 flex justify-center items-center'>
                                     <button onClick={buttonAutoSubmit} className='w-full h-full rounded-md grid place-content-center bg-primary text-clr'>Continue</button>
                                     <ToastContainer />
                                 </div>
@@ -168,7 +168,7 @@ export default function RegisterPage() {
                                     <span className='absolute w-full border border-gray-300 '></span>
                                     <h1 className='text-sm bg-clr z-10 pl-2 pr-2'>Or use one of these options</h1>
                                 </div>
-                                <div className='w-full h-1/5 gap-3 flex flex-col items-center mt-4'>
+                                <div className='w-full h-2/5 gap-3 flex flex-col items-center mt-4'>
                                     <a href="" className='w-full h-full gap-3 border-2 rounded-md bg-clr flex items-center justify-center'>
                                         <img src={google} alt="google logo" />
                                         <h1>Sign in with google</h1>
@@ -191,7 +191,7 @@ export default function RegisterPage() {
                                 exit="exit"
                                 variants={variants}
                                 transition={{ duration: 0.5 }}
-                                className='w-full flex flex-col items-center'
+                                className='w-full h-full flex flex-col items-center'
                             >
                                 <div className='w-full h-full flex flex-col justify-center items-center'>
                                     <img src={mailBox} alt="mailBox" />
@@ -202,7 +202,7 @@ export default function RegisterPage() {
                             </motion.div>
                         )}
                     </AnimatePresence>
-                </div>
+                </motion.div>
             </form>
         </section>
     );

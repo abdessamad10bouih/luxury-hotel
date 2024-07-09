@@ -14,7 +14,8 @@ module.exports = {
         'primary': '#2F80ED',
         'hover': '#163E73',
         'clr': '#ffffff',
-        'txt-hover' : '#ffffff'
+        'txt-hover' : '#ffffff',
+        'inputs-color': '#F2F2F2'
       }
     },
     screens: {

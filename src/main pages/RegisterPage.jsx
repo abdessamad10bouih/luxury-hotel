@@ -62,7 +62,7 @@ export default function RegisterPage() {
         }
 
         if (password !== confirmPassword) {
-            confirmPasswordError = 'Passwords do not match.';
+            confirmPasswordError = toast('Passwords do not match.');
         }
 
         setErrors({ ...errors, password: passwordError, confirmPassword: confirmPasswordError });

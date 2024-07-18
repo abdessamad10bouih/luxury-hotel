@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
 import { AuthContext } from '../context/auth';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const Navbar = () => {
+const Navbar = ({className, logo}) => {
   const { user } = useContext(AuthContext);
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -18,13 +18,19 @@ const Navbar = () => {
     setMenuVisible(!menuVisible);
   };
 
+  const variants = {
+    initial: { opacity: 0, y: -50 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 50 },
+  };
+
   return (
-    <nav className='w-full h-20 flex justify-center items-center'>
-      <div className='w-11/12 h-full flex justify-center items-center'>
+    <nav className={`w-full h-20 flex justify-center items-center ${className}`}>
+      <div className='w-10/12 h-full flex justify-center items-center'>
         <div className="w-1/4 h-full flex justify-center items-center">
           <img src={logo} alt="Logo" />
         </div>
-        <ul className='w-1/2 h-full flex justify-evenly items-center'>
+        <ul className='w-4/5 h-full flex justify-evenly items-center'>
           <li><Link to="/" className='hover:text-primary transition-colors duration-150 ease-in-out'>Home</Link></li>
           <li><Link to="/discover" className='hover:text-primary transition-colors duration-150 ease-in-out'>Discover</Link></li>
           <li><Link to="/rooms" className='hover:text-primary transition-colors duration-150 ease-in-out'>Rooms</Link></li>
@@ -38,13 +44,20 @@ const Navbar = () => {
                 <img src={user.photoURL} alt="User Profile" className='w-full h-full object-cover' />
               </div>
               {menuVisible && (
-                <div className='w-52 right-16 top-16 absolute z-10 rounded-md bg-clr'>
-                  <ul className='flex flex-col gap-3 w-full h-full p-5'>
-                    <li className='mb-4 border-b'><a href="">Profile</a></li>
-                    <li className='mb-4 border-b'><a href="">Settings</a></li>
-                    <li className='mb-4 border-b'><a href="">Payment</a></li>
-                    <li className='mb-4 border-b'><a className='cursor-pointer' onClick={handleLogOut}>Logout</a></li>
-                  </ul>
+                <div className='w-52 right-10 top-10 bg-gray-200 shadow-lg absolute z-30 rounded-md'>
+                  <motion.ul 
+                  className='flex flex-col gap-3 w-full h-full p-5'
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  variants={variants}
+                  >
+                    <li className='mb-4 border-b text-black'><a href="">Profile</a></li>
+                    <li className='mb-4 border-b text-black'><a href="">Settings</a></li>
+                    <li className='mb-4 border-b text-black'><a href="">My Bookings</a></li>
+                    <li className='mb-4 border-b text-black'><a href="">Payment</a></li>
+                    <li className='mb-4 border-b text-black'><a className='cursor-pointer' onClick={handleLogOut}>Logout</a></li>
+                  </motion.ul>
                 </div>
               )}
             </div>

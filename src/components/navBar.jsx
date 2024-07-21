@@ -2,10 +2,12 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/auth';
 import { signOut } from 'firebase/auth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser, faPlaneDeparture, faWallet, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { auth } from '../firebase';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Navbar = ({className, logo}) => {
+const Navbar = ({ className, logo }) => {
   const { user } = useContext(AuthContext);
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -44,19 +46,18 @@ const Navbar = ({className, logo}) => {
                 <img src={user.photoURL} alt="User Profile" className='w-full h-full object-cover' />
               </div>
               {menuVisible && (
-                <div className='w-52 right-10 top-10 bg-gray-200 shadow-lg absolute z-30 rounded-md'>
-                  <motion.ul 
-                  className='flex flex-col gap-3 w-full h-full p-5'
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                  variants={variants}
+                <div className='w-64 h-64 right-1 top-14 bg-clr shadow-md absolute z-30 rounded-lg'>
+                  <motion.ul
+                    className='flex flex-col w-full h-full justify-center items-center'
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    variants={variants}
                   >
-                    <li className='mb-4 border-b text-black'><a href="">Profile</a></li>
-                    <li className='mb-4 border-b text-black'><a href="">Settings</a></li>
-                    <li className='mb-4 border-b text-black'><a href="">My Bookings</a></li>
-                    <li className='mb-4 border-b text-black'><a href="">Payment</a></li>
-                    <li className='mb-4 border-b text-black'><a className='cursor-pointer' onClick={handleLogOut}>Logout</a></li>
+                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faCircleUser} className='ml-3' /> <a href="" className='font-semibold'>Account Management</a></li>
+                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faPlaneDeparture} className='ml-3' /> <a href="" className='font-semibold'>My Trips</a></li>
+                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faWallet} className='ml-3' /> <a href="" className='font-semibold'>Rewards and wallet</a></li>
+                    <li className='w-full h-full border-b flex items-center rounded-b-lg border-gray-200 gap-2'> <a href="" className='font-semibold' onClick={handleLogOut}> <FontAwesomeIcon icon={faArrowRightFromBracket} className='ml-3' /> Logout</a></li>
                   </motion.ul>
                 </div>
               )}

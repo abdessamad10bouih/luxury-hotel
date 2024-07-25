@@ -33,7 +33,7 @@ const Navbar = ({ className, logo }) => {
           <img src={logo} alt="Logo" />
         </div>
         <ul className='w-4/5 h-full flex justify-evenly items-center'>
-          <li><Link to="/" className='hover:text-primary transition-colors duration-150 ease-in-out'>Home</Link></li>
+          <li><Link to="/luxury-hotel" className='hover:text-primary transition-colors duration-150 ease-in-out'>Home</Link></li>
           <li><Link to="/discover" className='hover:text-primary transition-colors duration-150 ease-in-out'>Discover</Link></li>
           <li><Link to="/rooms" className='hover:text-primary transition-colors duration-150 ease-in-out'>Rooms</Link></li>
           <li><Link to="/about" className='hover:text-primary transition-colors duration-150 ease-in-out'>About</Link></li>
@@ -54,10 +54,10 @@ const Navbar = ({ className, logo }) => {
                     exit="exit"
                     variants={variants}
                   >
-                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faCircleUser} className='ml-3' /> <a href="" className='font-semibold'>Account Management</a></li>
-                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faPlaneDeparture} className='ml-3' /> <a href="" className='font-semibold'>My Trips</a></li>
-                    <li className='w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faWallet} className='ml-3' /> <a href="" className='font-semibold'>Rewards and wallet</a></li>
-                    <li className='w-full h-full border-b flex items-center rounded-b-lg border-gray-200 gap-2'> <a href="" className='font-semibold' onClick={handleLogOut}> <FontAwesomeIcon icon={faArrowRightFromBracket} className='ml-3' /> Logout</a></li>
+                    <li className=' text-black w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faCircleUser} className='ml-3' /> <a href="" className='font-semibold'>Account Management</a></li>
+                    <li className=' text-black w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faPlaneDeparture} className='ml-3' /> <a href="" className='font-semibold'>My Trips</a></li>
+                    <li className=' text-black w-full h-full border-b flex items-center border-gray-200 gap-2'> <FontAwesomeIcon icon={faWallet} className='ml-3' /> <a href="" className='font-semibold'>Rewards and wallet</a></li>
+                    <li className=' text-black w-full h-full border-b flex items-center rounded-b-lg border-gray-200 gap-2'> <a href="" className='font-semibold' onClick={handleLogOut}> <FontAwesomeIcon icon={faArrowRightFromBracket} className='ml-3' /> Logout</a></li>
                   </motion.ul>
                 </div>
               )}

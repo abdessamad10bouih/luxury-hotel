@@ -16,6 +16,7 @@ module.exports = {
         'clr': '#ffffff',
         'txt-hover' : '#ffffff',
         'inputs-color': '#F2F2F2',
+        'primary-hover' : 'rgba(27, 128, 237, 0.2)'
       }
     },
     screens: {

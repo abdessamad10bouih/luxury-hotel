@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/luxury-hotel/static/css/main.742a6d84.css",
-    "main.js": "/luxury-hotel/static/js/main.a963f912.js",
+    "main.css": "/luxury-hotel/static/css/main.6b00d43e.css",
+    "main.js": "/luxury-hotel/static/js/main.c5c099f6.js",
     "static/js/453.05e4485b.chunk.js": "/luxury-hotel/static/js/453.05e4485b.chunk.js",
     "static/media/hero-image.png": "/luxury-hotel/static/media/hero-image.2a7f028bbe2c14395850.png",
     "static/media/mobile.png": "/luxury-hotel/static/media/mobile.b47a29e0e5c06899f84d.png",
+    "static/media/imgRoom.png": "/luxury-hotel/static/media/imgRoom.63f99b63983565a0bc35.png",
     "static/media/Rectangle 11.png": "/luxury-hotel/static/media/Rectangle 11.5d4d6920578d0d14ad6b.png",
     "static/media/Rectangle 10.png": "/luxury-hotel/static/media/Rectangle 10.b835522a50f110c9e08e.png",
     "static/media/img2.png": "/luxury-hotel/static/media/img2.6cf4ba42a52240b36cea.png",
+    "static/media/imgRoom3.png": "/luxury-hotel/static/media/imgRoom3.dbf61bb81edc133e59ed.png",
+    "static/media/imgRoom2.png": "/luxury-hotel/static/media/imgRoom2.f75e0c4f286524987431.png",
     "static/media/img1.png": "/luxury-hotel/static/media/img1.efe9fea9535055b86131.png",
     "static/media/img3.png": "/luxury-hotel/static/media/img3.b28629e1eb01b949795e.png",
     "static/media/Rectangle 9.png": "/luxury-hotel/static/media/Rectangle 9.49b9c39266be64a24d51.png",
@@ -16,6 +19,7 @@
     "static/media/australia.png": "/luxury-hotel/static/media/australia.ad030e825c7146c2577a.png",
     "static/media/newzelanda.png": "/luxury-hotel/static/media/newzelanda.093dd48071ee05bdb32b.png",
     "static/media/greece.png": "/luxury-hotel/static/media/greece.01e2990836b7d4b01cbb.png",
+    "static/media/room.png": "/luxury-hotel/static/media/room.93231ca939cef36f3b90.png",
     "static/media/pt-serif-latin-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-latin-400-normal.1ae22975f707d0acdb70.woff2",
     "static/media/pt-serif-cyrillic-ext-400-normal.woff2": "/luxury-hotel/static/media/pt-serif-cyrillic-ext-400-normal.fd1b1ba0314b74f5f36c.woff2",
     "static/media/welcome.png": "/luxury-hotel/static/media/welcome.c278eb8614423532ee88.png",
@@ -30,12 +34,12 @@
     "static/media/poppins-latin-ext-400-normal.woff": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/luxury-hotel/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/luxury-hotel/index.html",
-    "main.742a6d84.css.map": "/luxury-hotel/static/css/main.742a6d84.css.map",
-    "main.a963f912.js.map": "/luxury-hotel/static/js/main.a963f912.js.map",
+    "main.6b00d43e.css.map": "/luxury-hotel/static/css/main.6b00d43e.css.map",
+    "main.c5c099f6.js.map": "/luxury-hotel/static/js/main.c5c099f6.js.map",
     "453.05e4485b.chunk.js.map": "/luxury-hotel/static/js/453.05e4485b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.742a6d84.css",
-    "static/js/main.a963f912.js"
+    "static/css/main.6b00d43e.css",
+    "static/js/main.c5c099f6.js"
   ]
 }

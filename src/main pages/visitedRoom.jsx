@@ -10,17 +10,23 @@ export default function Visited () {
     <>
     <header className='w-full flex flex-col h-screen'>
         <Navbar logo={logo} />
-        <section className='w-full h-4/5 gap-2 p-10 flex'>
+        <section className='w-full h-4/5 gap-4 p-3 flex'>
                 <div className='w-full border h-full'>
                     <img className='w-full h-full object-fill' src={img1} alt="room" />
                 </div>
                 <div className='w-1/3 gap-5 h-full flex flex-col'>
-                    <img className='h-52' src={img2} alt="" />
-                    <img className='h-52' src={img3} alt="" />
-                    <a className='w-full h-14 bg-primary rounded-md flex justify-center items-center text-xl text-clr' href="">View More</a>
+                    <img className='h-56' src={img2} alt="" />
+                    <img className='h-56' src={img3} alt="" />
                 </div>
         </section>
     </header>
+      <section className='w-full h-screen flex flex-col border'>
+        <div className='w-full h-12 border border-red-700 flex'>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Rooms</a></li>
+          <li><a href="">Guest Reviews</a></li>
+        </div>
+      </section>
     </>
   )
 }

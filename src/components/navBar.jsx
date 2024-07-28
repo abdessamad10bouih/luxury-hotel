@@ -13,7 +13,7 @@ const Navbar = ({ className, logo }) => {
 
   const handleLogOut = () => {
     signOut(auth);
-    setMenuVisible(false); // Close the menu on logout
+    setMenuVisible(false);
   };
 
   const toggleMenu = () => {
@@ -27,23 +27,23 @@ const Navbar = ({ className, logo }) => {
   };
 
   return (
-    <nav className={`flex w-full h-20 justify-between items-center p-4 md:h-20 md:justify-center md:items-center ${className}`}>
-      <div className='flex justify-between w-full h-full items-center'>
+    <nav className={`flex w-full h-20 justify-between items-center p-4 md:p-0 md:h-20 md:justify-center md:items-center ${className}`}>
+      <div className='flex justify-between w-full h-full items-center md:w-11/12 md:flex md:justify-center md:items-center'>
         <div className="flex items-center justify-between w-full md:w-1/4">
-          <img src={logo} alt="Logo" className="w-24" />
+          <img src={logo} alt="Logo" />
           <button className="text-2xl md:hidden" onClick={toggleMenu}>
             <FontAwesomeIcon icon={menuVisible ? faTimes : faBars} />
           </button>
         </div>
 
         <ul className={`fixed top-20 right-0 w-3/4 h-full bg-white shadow-lg z-50 transform ${menuVisible ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:static md:flex md:w-auto md:translate-x-0 md:bg-transparent md:shadow-none`}>
-          <li><Link to="/luxury-hotel" className='block p-4 hover:text-primary transition-colors duration-150 ease-in-out'>Home</Link></li>
-          <li><Link to="/discover" className='block p-4 hover:text-primary transition-colors duration-150 ease-in-out'>Discover</Link></li>
-          <li><Link to="/rooms" className='block p-4 hover:text-primary transition-colors duration-150 ease-in-out'>Rooms</Link></li>
-          <li><Link to="/about" className='block p-4 hover:text-primary transition-colors duration-150 ease-in-out'>About</Link></li>
-          <li><Link to="/contact" className='block p-4 hover:text-primary transition-colors duration-150 ease-in-out'>Contact</Link></li>
+          <li><Link to="/luxury-hotel" className='block p-4 mt-2 hover:text-primary transition-colors duration-150 ease-in-out'>Home</Link></li>
+          <li><Link to="/discover" className='block p-4 mt-2 hover:text-primary transition-colors duration-150 ease-in-out'>Discover</Link></li>
+          <li><Link to="/rooms" className='block p-4 mt-2 hover:text-primary transition-colors duration-150 ease-in-out'>Rooms</Link></li>
+          <li><Link to="/about" className='block p-4 mt-2 hover:text-primary transition-colors duration-150 ease-in-out'>About</Link></li>
+          <li><Link to="/contact" className='block p-4 mt-2 hover:text-primary transition-colors duration-150 ease-in-out'>Contact</Link></li>
           {!user ? (
-            <div className='flex flex-col mt-4 px-4'>
+            <div className='flex flex-col mt-4 px-4 md:hidden'>
               <Link to="/register" className='block w-full py-2 text-center rounded-md text-primary border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out mb-2'>Register</Link>
               <Link to="/login" className='block w-full py-2 text-center rounded-md text-clr bg-primary border-2 border-blue-500 hover:bg-hover transition-colors duration-300 ease-in-out'>Sign In</Link>
             </div>
@@ -79,9 +79,9 @@ const Navbar = ({ className, logo }) => {
               )}
             </div>
           ) : (
-            <div className='flex'>
-              <Link to="/register" className='w-28 h-3/4 rounded-md text-primary grid place-content-center border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out mr-4'>Register</Link>
-              <Link to="/login" className='w-28 h-3/4 rounded-md text-clr bg-primary grid place-content-center border-2 border-blue-500 hover:bg-hover transition-colors duration-300 ease-in-out'>Sign In</Link>
+            <div className='flex w-4/5 h-full justify-end items-center'>
+              <Link to="/register" className='w-28 h-4/5 rounded-md text-primary grid place-content-center border-2 border-blue-500 hover:bg-primary hover:text-txt-hover transition-colors duration-200 ease-in-out mr-4'>Register</Link>
+              <Link to="/login" className='w-28 h-4/5 rounded-md text-clr bg-primary grid place-content-center border-2 border-blue-500 hover:bg-hover transition-colors duration-300 ease-in-out'>Sign In</Link>
             </div>
           )}
         </div>

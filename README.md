@@ -1,70 +1,233 @@
-# Getting Started with Create React App
+# 🏨 Luxury Hotel - my Dream Place
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Language](https://img.shields.io/badge/Language-React%20%2F%20JavaScript-yellow)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/License-UNLICENSED-red)](https://choosealicense.com/no-permission/)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)](https://github.com/abdessamad10bouih/luxury-hotel/actions)
+[![Pages](https://img.shields.io/badge/Deployed%20On-GitHub%20Pages-purple)](http://abdessamad10bouih.github.io/luxury-hotel/)
 
-## Available Scripts
+**Un projet open source moderne pour une plateforme de réservation d'hôtels de luxe.**
 
-In the project directory, you can run:
+Luxury Hotel (anciennement *my Dream Place*) est une application web complète conçue pour faciliter la découverte, la planification et la réservation des dieux les plus luxueux du monde. L'interface utilisateur conviviale, associée à des fonctionnalités avancées comme la recherche contextuelle, l'authentification sociale et le filtrage intelligent, en fait un outil puissant pour les voyageurs en quête d'expériences exceptionnelles.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Fonctionnalités Principales
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Navigation fluide** avec React Router (multi-pages dynamiques)
+- **Authentification complète** via Google et génération de compte par email (Firebase Auth)
+- **Recherche en temps réel** avec API géographique (rapidAPI GeoDB Cities) pour les suggestions de villes
+- **Interface Responsive** adaptée aux mobiles et bureau grâce à Tailwind CSS
+- **Système de filtres avancés** (budget, équipements, annulation gratuite, etc.)
+- **Affichage détaillé des chambres** avec galerie photo, notes, et équipements
+- **Pop-ups interactifs** (bienvenue, alerte COVID)
+- **Gestion du thème & animation moderne** via Framer Motion et FontAwesome
+- **Notifications utilisateur** via `react-toastify`
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Stack Technique
 
-### `npm run build`
+| Catégorie       | Technologies Utilisées                                                                 |
+|----------------|----------------------------------------------------------------------------------------|
+| Frontend        | React 18, JSX, JavaScript (`react`, `react-dom`, `react-router-dom`)                  |
+| UI              | Tailwind CSS, Material UI (MUI), PrimeReact, @emotion/react, FontAwesome Icons        |
+| Animation       | Framer Motion, React Slider, CSS Transitions                                          |
+| API & Services  | Firebase Auth, rapidAPI (GeoDB Cities), Google Maps API (implémentée)                 |
+| Déploiement     | GitHub Pages                                                                             |
+| Outils          | Create React App, jQuery (pour recherche), React Toastify, Prettier, ESLint             |
+| Hébergement     | Firebase (auth), Statique via GitHub Pages                                              |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Cloner le dépôt**
 
-### `npm run eject`
+```bash
+git clone https://github.com/abdessamad10bouih/luxury-hotel.git
+cd luxury-hotel
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Installer les dépendances**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> ✅ Vérifiez que Node.js est installé (version 14+ recommandée)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Lancer en mode développement**
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+L’application sera disponible à [http://localhost:3000](http://localhost:3000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📚 Utilisation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Pages Disponibles
+| Chemin | Fonctionnalité |
+|-------|----------------|
+| `/` ou `/luxury-hotel` | Page d'accueil (liste des destinations) |
+| `/rooms` | Recherche et filtrage des chambres |
+| `/room` | Détail d'une chambre sélectionnée |
+| `/login` | Connexion utilisateur |
+| `/register` | Création de compte |
 
-### Analyzing the Bundle Size
+### Exemples d'Interactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**1. Recherche de destination**
 
-### Making a Progressive Web App
+```jsx
+// Dans SearchBar.jsx
+<Calendar value={checkInDate} onChange={(e) => setCheckInDate(e.value)} />
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**2. Connexion avec Google**
 
-### Advanced Configuration
+```js
+const handleSign = async () => {
+  const provider = new GoogleAuthProvider();
+  await signInWithPopup(auth, provider);
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**3. Filtrage des résultats**
 
-### Deployment
+```jsx
+<input 
+  type="checkbox" 
+  id="beach-front" 
+  onChange={() => applyFilter('beachFront')} 
+/>
+<label htmlFor="beach-front">Bord de mer</label>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📂 Structure du Projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+src/
+├── assets/               # Images, logos, icônes
+├── components/           # Composants réutilisables (NavBar, Button, Footer, etc.)
+├── context/              # Authentification globale (AuthContext.js, firebase.js)
+├── main pages/           # Pages principales (Home, Rooms, Register, Login, etc.)
+├── variants.js           # Animations Framer Motion
+├── firebase.js           # Configuration Firebase (clé chargée via .env)
+└── App.js / index.js     # Entrée principale et routing
+```
+
+---
+
+## 🔐 Configuration & Variables d'Environnement
+
+Créez un fichier `.env` à la racine du projet :
+
+```env
+# Firebase Configuration
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+
+# API Keys
+REACT_APP_RAPIDAPI_KEY=your_rapidapi_key
+```
+
+> 🔑 Les clés API ne doivent **jamais** être poussées sur GitHub.
+
+---
+
+## 🧪 Tests & Intégration Continue (CI/CD)
+
+### Tests
+Le projet inclut des tests basiques avec Jest :
+```bash
+npm test
+```
+
+Un test unitaire est défini dans `App.test.js`.
+
+### CI/CD
+- ✅ **GitHub Actions** : À configurer pour les vérifications automatiques (linting, test)
+- 📦 **Déploiement automatisé** via `gh-pages` après build
+
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+> Déploiement sur : [http://abdessamad10bouih.github.io/luxury-hotel/](http://abdessamad10bouih.github.io/luxury-hotel/)
+
+---
+
+## 🚀 Déploiement
+
+1. **Builder l'application**
+```bash
+npm run build
+```
+
+2. **Déployer sur GitHub Pages**
+```bash
+npm run deploy
+```
+
+> ✅ Le déploiement est automatiquement poussé sur `gh-pages` depuis la commande `npm run deploy`.
+
+> Le `homepage` est déjà configuré dans `package.json`.
+
+---
+
+## 🤝 Contribuer
+
+Nous sommes ouverts aux contributions ! Voici comment participer :
+
+1. **Fork le projet**
+2. **Crée une branche** (`feature/nouvelle-fonction`)
+3. **Commite tes modifications** (`git commit -m "Ajoute X"`)
+4. **Pousse la branche** (`git push origin feature/nouvelle-fonction`)
+5. **Ouvre une Pull Request**
+
+### Bonnes Pratiques
+- ✅ Suivre le linting ESLint
+- ✅ Écrire du code modulaire et commenté
+- 🔤 Nommer les composants en PascalCase
+- 🎨 Utiliser Tailwind pour le style
+
+---
+
+## 📄 License & Crédits
+
+> ❌ **Aucune license n’est définie sur le dépôt.**  
+Par défaut, ce projet est **non open source** (pas de redistribution, modification, ou usage commercial autorisé sans permission explicite.)
+
+Nous recommandons d'ajouter une license (MIT ou Apache 2.0) pour un vrai projet open source.
+
+### Crédits
+- **API Géographique** : [GeoDB Cities API](https://rapidapi.com/wirefreethought/api/geo-db-cities/)
+- **Icônes** : Font Awesome
+- **Animation** : Framer Motion
+- **UI Components** : PrimeReact, MUI
+- **Authentification** : Firebase Auth
+
+---
+
+## 👥 Mainteneurs & Contacts
+
+- **Développeur Principal** : Abdessamad Boulouih
+- **GitHub** : [@abdessamad10bouih](https://github.com/abdessamad10bouih)
+- **Email** : abdessamad10bouih@gmail.com *(à configurer)*
+- **Projet hébergé sur** : [GitHub Repository](https://github.com/abdessamad10bouih/luxury-hotel)
+
+---
+
+🌟 Merci d’utiliser **Luxury Hotel** – Transformez chaque voyage en une expérience mémorable.
